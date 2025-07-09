@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BEN GRAPHICS | Creative Design Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16">
+</head>
+<body>
+
+  <header>
+    <h1>BEN GRAPHICS</h1>
+    <p>Your Vision, Our Design</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="subscribe">
+  <h2>Subscribe to BEN GRAPHICS</h2>
+  <form action="#" method="post" class="subscribe-form">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <button type="submit" class="button">Subscribe</button>
+  </form>
+</section>
+
+  <section id="hero">
+    <h2>We Turn Ideas Into Art</h2>
+    <p>Let your brand speak through creative visuals.</p>
+    <img src="hero.png" alt="Ben Graphics Hero Image" class="hero-img"/>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>I’m <strong>Benedict Mwangi</strong>, CEO of BEN GRAPHICS. We specialize in graphic design, branding, logos, posters, and visual storytelling for businesses and individuals...</p>
+  </section>
+
+  <section id="about-company">
+    <button onclick="toggleAbout()">📌 Show About BEN GRAPHICS</button>
+    <div id="about-content" style="display: none;" class="about-box">
+      <div class="overlay">
+        <h2>About BEN GRAPHICS (Full)</h2>
+        <p>
+          I, Benedict Mwangi, am the founder and CEO of BEN GRAPHICS — a creative
+           design agency built on passion, purpose, and a deep appreciation for
+            visual storytelling. What began as a personal dream quickly turned
+             into a professional mission: to help individuals and businesses
+              express their identity through bold, thoughtful, and impactful 
+              design. At BEN GRAPHICS, we don’t just make things look good — 
+              we design with meaning, strategy, and vision.
+<br>
+Our studio specializes in a wide range of graphic design services, including 
+logo creation, brand identity development, posters, flyers, business cards, 
+and visual content for social media. Each project is treated with fresh eyes
+ and creative energy, ensuring that the final product isn’t just beautiful, 
+ but also functional and aligned with the client’s brand message.
+<br>
+What sets BEN GRAPHICS apart is not just the quality of our work, but the 
+relationship we build with every client. I believe that the best designs c
+ome from a place of understanding — and that begins with listening. I take 
+the time to understand your goals, your target audience, and your vision 
+for the future. Whether you're a new business trying to stand out or an 
+established brand in need of a refresh, I approach every project with the
+ same level of dedication and creativity.
+<br>
+Client relationships are the core of what I do. I strive to make every 
+interaction honest, professional, and collaborative. I keep communication
+ open, timelines realistic, and your feedback central to the design process.
+  This approach has allowed me to build long-term partnerships with clients
+   who return again and again, not just for the quality of design, but for th
+   e trust and experience they’ve come to value.
+<br>
+At BEN GRAPHICS, we understand that design is more than decoration — it’s a
+ tool for growth, recognition, and connection. Our mission is to help businesses
+  of all sizes communicate their value, capture attention, and leave a lasting
+   impression. My personal commitment is to give every client work they can be
+    proud of, and an experience they can trust.
+<br>
+When you work with BEN GRAPHICS, you’re not just getting a designer — you’re
+ gaining a creative partner who genuinely cares about your success.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✔ Logo Design</li>
+      <li>✔ Branding & Identity</li>
+      <li>✔ Social Media Banners</li>
+      <li>✔ Posters & Flyers</li>
+      <li>✔ Business Cards</li>
+    </ul>
+   <p><strong><em>
+    Designing is our language. Your idea is our concern.
+   </em></strong></p>
+
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>See our latest works below:</p>
+    <div class="gallery">
+      <img src="design6.png" alt="Design 1">
+      <img src="design7.png" alt="Design 2">
+      <img src="design4.png" alt="Design 3">
+      <img src="design3.png" alt="Design 4">
+      <img src="design5.jpg" alt="Design 5">
+      <img src="design2.png" alt="Design 6">
+      <img src="design1.png" alt="Design 7">  
+    </div>
+    <div class="video-section">
+     <h3>Watch Our Work in Action</h3>
+<video autoplay muted loop playsinline width="100%">
+  <source src="ben-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <a href="tel:+254707801312">0707 801 312</a></p>
+    <p>📧 Email: <a href="mailto:benedictmwangi834@gmail.com">benedictmwangi834@gmail.com</a></p>
+    <p>   Facebook: <a href="https://facebook.com" target="_blank">Smaddy Ben</a></p>
+  </section>
+  <section id="subscribe">
+  <h2>Subscribe & Share Your Thoughts</h2>
+  <form action="#" method="post" class="subscribe-form">
+    <input type="email" name="email" placeholder="Your Email Address" required>
+    <textarea name="comment" placeholder="Your Comment..." rows="4" required></textarea>
+    <button type="submit" class="button">Subscribe</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 BEN GRAPHICS. All rights reserved.</p>
+  </footer>
+
+  <!-- 🔽 JavaScript for toggle -->
+  <script>
+    function toggleAbout() {
+      const about = document.getElementById("about-content");
+      about.style.display = about.style.display === "none" ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>

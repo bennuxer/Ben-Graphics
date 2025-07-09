@@ -1,0 +1,286 @@
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  line-height: 1.6;
+  background: url('images/bg-main.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: all 0.3s ease;
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffdd57;
+}
+
+/* Header Branding */
+header {
+  background: linear-gradient(135deg, #cac22a, #0f46a4);
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #000000;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+/* Hero Section */
+#hero {
+  background: #60a3a2;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #f6b607;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 6px; /* optional: moves underline away from text */
+}
+
+
+/* Services */
+ul {
+  list-style-type: '✔ ';
+  text-align: left;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-section {
+  margin-top: 2.5rem;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.button {
+  background: #0a9745;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #087c39;
+}
+
+/* Contact */
+#contact a {
+  color: #0a9745;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0a9745;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background: #149a9f;
+  color: #000000;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* About Company Section */
+#about-company {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#about-company button {
+  padding: 1rem 2rem;
+  background-color: #0a9745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem; /* 👈 Increased font size */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#about-company button:hover {
+  background-color: #0fbe61;
+}
+
+.about-box {
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: #5f46ed; /* Optional: clean white background */
+  color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.about-box .overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.75rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
+#subscribe {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* optional background for contrast */
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscribe-form input,
+.subscribe-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.subscribe-form button {
+  background: #0a9745;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background: #087c39;
+}
